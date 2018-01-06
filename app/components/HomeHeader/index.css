@@ -1,0 +1,10 @@
+.home-header{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color:#fff;
+
+}
+.home-header .city{
+     background: black;
+ }

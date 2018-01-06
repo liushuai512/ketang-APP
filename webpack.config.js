@@ -1,40 +1,45 @@
-//解析路径  入口只支持决定路径
 let path = require('path');
+let webpack = require('webpack');
 let htmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
-    entry:'./app/index.js',
-    output:{
-        //打包后的文件
-        filename: "bundle.js",
-        //打包的路径
-        path:path.resolve('dist')
+    entry: './app/index.js',//入口文件
+    output: {//输出配置项
+        path: path.resolve('dist'),//输出的目录
+        filename: 'bundle.js',//输出的文件名
     },
+    /*devServer: {
+        historyApiFallback: true,
+    },*/
+    //配置模块
     module: {
+        //很多的模块加载规则
         rules: [
             {
-                test:/\.js$/,
-                use:'babel-loader',
-                exclude:/node_modules/
+                test: /\.js$/,//如果说要加载的文件后缀是.js的话
+                use: 'babel-loader',//指定加载器
+                exclude: /node_modules/
             },
             {
-                test:/\.less$/,
-                use:['style-loader','css-loader']
+                test: /\.less$/,
+                use: ["style-loader", "css-loader", "less-loader"],
+            },
+            {
+                test: /\.(jpg|png|gif|svg)$/,
+                use: 'url-loader'
             }
         ]
     },
-    plugins:[
-        new htmlWebpackPlugin({
-            template:'./app/index.html'
-        })
-    ],
-    devtool: "source-map",//错误时可以提示源码错误，不会光显示bundle.js错误
+    //在出错的时候可以提示具体源文件的代码行数，而非bundle.js行数
+    devtool: 'cheap-module-source-map',
     devServer: {
         proxy:{
             '/api':'http://localhost:3000'
         }
-    }
+
+    },
+    plugins: [
+        new htmlWebpackPlugin({
+            template: './app/index.html'
+        })
+    ]
 }
-
-
-

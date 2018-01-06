@@ -9,12 +9,9 @@ export default class App extends Component{
         }
     }
     componentDidMount(){
-        setTimeout(()=>{
-            this.setState({
-                done:true
-            })
-        },3000)
-
+        this.setState({
+            done:true
+        })
     }
     render(){
         return (
