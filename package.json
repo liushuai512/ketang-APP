@@ -1,0 +1,12 @@
+{
+  "name": "ketang-APP",
+  "version": "1.0.0",
+  "description": "- react react-router4 redux react-redux ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
