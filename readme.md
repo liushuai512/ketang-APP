@@ -70,3 +70,12 @@ yarn add webpack webpack-dev-server
 -D:开发依赖
 ```
 
+## 目录结构
+- components  组建 木偶组件，负责展示
+- containers  页面组建，或者自己的subpage目录下
+   - Home
+     - subpage 智能组件，可以读取数据
+     - index.js
+
+- index.js 用来控制显示那一个页面
+
