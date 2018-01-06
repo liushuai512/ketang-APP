@@ -34,6 +34,8 @@ babel-loader：转义
 ## react
 ```
 npm install react redux react-redux react-router-dom -S
+
+
 -S:项目依拉
 -D:开发依赖
 ```
