@@ -19,6 +19,8 @@ react-redux:用来链接react和react-redux的
 ```
 npm install webpack webpack-dev-server
 
+yarn add webpack webpack-dev-server
+
 webpack:进行打包
 webpack-dev-server:起后台服务的
 ```
@@ -36,8 +38,7 @@ babel-loader：转义
 npm install react redux react-redux react-router-dom -S
 
 
--S:项目依拉
--D:开发依赖
+
 ```
 
 ## fetch
@@ -52,6 +53,20 @@ npm install express -S
 
 ##scripts
 ```
-"start","webpack-dev-server --port 5000 --open --progress --colors",
-"build","webpack -p"
+"start":"webpack-dev-server --port 5000 --open --progress --colors",
+"build":"webpack -p"
 ```
+### yarn
+```
+yarn add webpack webpack-dev-server
+
+加 -dev 就是开发依赖
+不加  就是项目依赖
+```
+
+### npm
+```
+-S:项目依拉
+-D:开发依赖
+```
+
