@@ -50,6 +50,11 @@ npm install es6-promise whatwg-fetch -D
 ```
 npm install express -S
 ```
+## swipe
+```
+npm install swipe-js-iso react-swipe
+
+```
 
 ##scripts
 ```
