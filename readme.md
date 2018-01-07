@@ -84,3 +84,9 @@ yarn add webpack webpack-dev-server
 
 - index.js 用来控制显示那一个页面
 
+
+- store  onlyOne
+- action 用户发布动作
+- reducer 定义规则的
+- action-types action的名字
+
