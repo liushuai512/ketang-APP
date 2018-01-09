@@ -18,7 +18,7 @@ export default class Slider extends Component{
             }
         };
         return (
-            <div>
+            <div className="slider-top">
                 <ReactSwipe className="carousel" swipeOptions={opts}>
                     <div>
                         <ul>

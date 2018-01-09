@@ -1,0 +1,39 @@
+.list-item{
+  display: flex;
+  line-height: 25px;
+  margin: 15px;
+  border-top: 5px;
+  border-bottom: 1px solid #ccc;
+  img{
+    width: 100px;
+    height: 100px;
+  }
+  .list-item-content{
+    position: relative;
+    margin-left: 2%;
+    width: 98%;
+
+    .distance{
+      position: absolute;
+      right: 5px;
+      top: 0;
+    }
+    strong{
+      color: #e9203d;
+    }
+    p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+    }
+    div{
+      display: flex;
+      justify-content: space-between;
+      span{
+        color: #ccc;
+      }
+    }
+  }
+
+}

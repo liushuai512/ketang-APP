@@ -1,38 +1,41 @@
+.slider-top{
+  margin-top: 48px;
+  .carousel{
+    ul{
 
-.carousel{
-  ul{
-
-    display: flex;
-    flex-wrap: wrap;
-    li{
-      i{
-        font-size: 25px;
-        color: #e9203d;
-      }
-      margin-top: 10px;
       display: flex;
-      flex-direction: column;
-      width: 20%;
-      line-height: 25px;
-      align-items: center;
+      flex-wrap: wrap;
+      li{
+        i{
+          font-size: 25px;
+          color: #e9203d;
+        }
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        line-height: 25px;
+        align-items: center;
 
+      }
+    }
+
+  }
+
+  .dots{
+    display: flex;
+    justify-content: center;
+    li{
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin: 10px 5px;
+      background: #ccc;
+    }
+    .active{
+      background: #e9203d;
     }
   }
-
 }
 
-.dots{
-  display: flex;
-  justify-content: center;
-  li{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin: 10px 5px;
-    background: #ccc;
-  }
-  .active{
-    background: #e9203d;
-  }
-}
 
